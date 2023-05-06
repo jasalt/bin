@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+
+# Copy files from paths given m3u file points to (WIP, not working yet)
+
 import sys
 import os
 
