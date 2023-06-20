@@ -1,6 +1,16 @@
 # Useful UNIX convenience scripts 
 
-Some written by myself, some by other people. See script files for more details. Some highlights include:
+Some written by myself, some by other people. See script files for more details. More custom shell configuration on [.oh-my-zsh repo](https://github.com/jasalt/.oh-my-zsh/tree/master/custom).
+
+Some useful external command line tools are also listed in my [starred utilities list](https://github.com/stars/jasalt/lists/utilities).
+
+## Installation
+
+Clone to home and add to path.
+
+echo 'PATH="$PATH:/home/user/bin"' >> ~/.zshrc 
+
+# Example content
 
 ## ffmpeg media conversion scripts
 
