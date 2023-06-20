@@ -5,7 +5,7 @@
 # Eg. /Applications/Emacs.app/Contents/MacOS/bin/emacsclient
 
 if [ "$(pidof emacs)" ] ; then
-    emacsclient -n -s ~/.emacs.d/server/jarkon-emacs "$@"
+    emacsclient -nw -s ~/.emacs.d/server/jarkon-emacs "$@"
 else
     emacs -mm "$@" &
 fi
