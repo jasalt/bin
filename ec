@@ -1,11 +1,16 @@
 #!/bin/sh
-# Emacsclient script
-# Requires replacing emacsclient and emacs emacs binaries with symlinks to the used emacs gui version (needs SIP disabled on mac)
-# Eg. /Applications/Emacs.app/Contents/MacOS/bin/emacs
-# Eg. /Applications/Emacs.app/Contents/MacOS/bin/emacsclient
+# Launch emacsclient or emacs passing args to it on Debian / MacOS.
+
+# If having trouble on Mac, make sure correct emacsclient is found in $PATH.
 
 if [ "$(pidof emacs)" ] ; then
     emacsclient  -s ~/.emacs.d/server/jarkon-emacs "$@" &
 else
-    emacs -mm "$@" &
+
+    if [[ $OSTYPE == 'darwin'* ]]; then
+	open -a Emacs --args --chdir $PWD "$@"
+    else
+	emacs "$@" &
+    fi
+    
 fi
