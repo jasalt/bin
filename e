@@ -4,7 +4,7 @@
 # If having trouble on Mac, make sure correct emacsclient is found in $PATH.
 
 if [ "$(pidof emacs)" ] ; then
-    emacsclient  -s ~/.emacs.d/server/jarkon-emacs "$@" &
+    emacsclient  -s ~/.emacs.d/.cache/server/jarkon-emacs "$@" &
 else
 
     if [[ $OSTYPE == 'darwin'* ]]; then
