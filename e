@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # Launch emacsclient or emacs passing args to it on Debian / MacOS.
 
 # If having trouble on Mac, make sure correct emacsclient is found in $PATH.
